@@ -1,0 +1,83 @@
+﻿@model CapaAdmin.Models.RG_TRANSACCIONES
+
+@{
+    ViewBag.Title = "Detalles de la transaccion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var btnZise = "h4";
+    var btnPadding = "pt-1 pb-1";
+}
+
+
+<div class="card mt-5 border-dark">
+    <div class="card-header bg-dark bg-gradient">
+        <h4 class="text-center text-white">
+            @ViewBag.Title
+        </h4>
+    </div>
+
+    <div class="m-3">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FECHA)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FECHA)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MONTO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MONTO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ESTADO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ESTADO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EMPLEADO.CEDULA)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EMPLEADO.CEDULA)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TP_DEDUCCIONES.NOMBRE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TP_DEDUCCIONES.NOMBRE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TIPO_INGRESO.NOMBRE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TIPO_INGRESO.NOMBRE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TRANSACCION.TIPO_TRANSACCION)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TRANSACCION.TIPO_TRANSACCION)
+            </dd>
+
+        </dl>
+    </div>
+
+    <div class="card-footer">
+        <a class="btn btn-primary @btnZise @btnPadding" href="@Url.Action("Index", "RG_TRANSACCIONES")"><i class="bi bi-arrow-bar-left"></i></a>
+        <a class="btn btn-warning @btnZise @btnPadding" href="@Url.Action("Edit", "RG_TRANSACCIONES", new {id = Model.ID_RGTRANS})"><i class="bi bi-pencil-square"></i></a>
+    </div>
+</div>

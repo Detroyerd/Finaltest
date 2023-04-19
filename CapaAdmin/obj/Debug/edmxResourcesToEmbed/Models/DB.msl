@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FENIX_NOMINAModelStoreContainer" CdmEntityContainer="FENIX_NOMINAEntities">
+    <EntitySetMapping Name="DEPARTAMENTO">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.DEPARTAMENTO">
+        <MappingFragment StoreEntitySet="DEPARTAMENTO">
+          <ScalarProperty Name="ID_DEPAR" ColumnName="ID_DEPAR" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="UBICACION" ColumnName="UBICACION" />
+          <ScalarProperty Name="RESPONSABLE_AREA" ColumnName="RESPONSABLE_AREA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADO">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.EMPLEADO">
+        <MappingFragment StoreEntitySet="EMPLEADO">
+          <ScalarProperty Name="ID_EMPLE" ColumnName="ID_EMPLE" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="SALARIO" ColumnName="SALARIO" />
+          <ScalarProperty Name="ID_DEPARTAMENTO" ColumnName="ID_DEPARTAMENTO" />
+          <ScalarProperty Name="ID_PUESTO" ColumnName="ID_PUESTO" />
+          <ScalarProperty Name="ID_NOMINA" ColumnName="ID_NOMINA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGIN1">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.LOGIN1">
+        <MappingFragment StoreEntitySet="LOGIN1">
+          <ScalarProperty Name="ID_USER" ColumnName="ID_USER" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="CONTRASEÑA" ColumnName="CONTRASEÑA" />
+          <ScalarProperty Name="TIPO_USUARIO" ColumnName="TIPO_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PUESTO">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.PUESTO">
+        <MappingFragment StoreEntitySet="PUESTO">
+          <ScalarProperty Name="ID_PUES" ColumnName="ID_PUES" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="NIVEL_RIESGO" ColumnName="NIVEL_RIESGO" />
+          <ScalarProperty Name="NIVEL_MN_SALARIO" ColumnName="NIVEL_MN_SALARIO" />
+          <ScalarProperty Name="NIVEL_MX_SALARIO" ColumnName="NIVEL_MX_SALARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RG_TRANSACCIONES">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.RG_TRANSACCIONES">
+        <MappingFragment StoreEntitySet="RG_TRANSACCIONES">
+          <ScalarProperty Name="ID_RGTRANS" ColumnName="ID_RGTRANS" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="ID_INGRESO" ColumnName="ID_INGRESO" />
+          <ScalarProperty Name="ID_DEDUCCION" ColumnName="ID_DEDUCCION" />
+          <ScalarProperty Name="ID_TIPO_TRANSACCION" ColumnName="ID_TIPO_TRANSACCION" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOLICITUD">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.SOLICITUD">
+        <MappingFragment StoreEntitySet="SOLICITUD">
+          <ScalarProperty Name="ID_NOTI" ColumnName="ID_NOTI" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="APELLIDO" ColumnName="APELLIDO" />
+          <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+          <ScalarProperty Name="MENSAJE" ColumnName="MENSAJE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_INGRESO">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.TIPO_INGRESO">
+        <MappingFragment StoreEntitySet="TIPO_INGRESO">
+          <ScalarProperty Name="ID_INGR" ColumnName="ID_INGR" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DEPENDE_SALARIO" ColumnName="DEPENDE_SALARIO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_NOMINA">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.TIPO_NOMINA">
+        <MappingFragment StoreEntitySet="TIPO_NOMINA">
+          <ScalarProperty Name="ID_TI" ColumnName="ID_TI" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TP_DEDUCCIONES">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.TP_DEDUCCIONES">
+        <MappingFragment StoreEntitySet="TP_DEDUCCIONES">
+          <ScalarProperty Name="ID_TPDEDU" ColumnName="ID_TPDEDU" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DEPENDE_SALARIO" ColumnName="DEPENDE_SALARIO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRANSACCION">
+      <EntityTypeMapping TypeName="FENIX_NOMINAModel.TRANSACCION">
+        <MappingFragment StoreEntitySet="TRANSACCION">
+          <ScalarProperty Name="ID_TRANS" ColumnName="ID_TRANS" />
+          <ScalarProperty Name="TIPO_TRANSACCION" ColumnName="TIPO_TRANSACCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="RegistroUser" FunctionName="FENIX_NOMINAModel.Store.RegistroUser" />
+    <FunctionImportMapping FunctionImportName="ValidarUser" FunctionName="FENIX_NOMINAModel.Store.ValidarUser" />
+  </EntityContainerMapping>
+</Mapping>

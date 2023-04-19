@@ -1,0 +1,63 @@
+﻿@model CapaAdmin.Models.SOLICITUD
+
+@{
+    ViewBag.Title = "Borrar la solicitud";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var btnZise = "h4";
+    var btnPadding = "pt-1 pb-1";
+
+}
+
+
+<div class="card mt-5 border-dark">
+    <div class="card-header bg-dark bg-gradient">
+        <h4 class="text-center text-white">
+            @ViewBag.Title
+        </h4>
+    </div>
+
+    <div>
+        <dl class="dl-horizontal m-3">
+            <dt>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NOMBRE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.APELLIDO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.APELLIDO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TITULO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TITULO)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MENSAJE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MENSAJE)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color card-footer">
+                <a class="btn btn-primary @btnZise @btnPadding" href="@Url.Action("Index", "SOLICITUDs")"><i class="bi bi-arrow-bar-left"></i></a>
+                <input type="submit" value="Borrar" class="btn btn-success @btnZise @btnPadding" />
+            </div>
+        }
+    </div>
+</div>

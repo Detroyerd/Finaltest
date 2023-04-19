@@ -1,17 +1,9 @@
 # SowftwareNomina
 
-## PARTICIPANTES
-
-    1-SCARLETTE DIAZ CRUZ 202010232
-
-    2-LUIS DAVID ALMANZAR VASQUEZ 20210496
-
-    3-LUIS ALEJANDRO FERNANDEZ 20210809
-
     4-LUIS ALEXANDER FERMIN REYNOSO 20211132
 
 ## Funcionalidad
-#### LA FUNCION DEL SISTEMA DE NOMINA ES PODER HACER:
+### LA FUNCION DEL SISTEMA DE NOMINA ES PODER HACER:
 
        Gestión de empleados
        Gestión de Departamentos
@@ -22,7 +14,6 @@
        Una consulta por criterios (ej: empleados por departamentos y puestos)
        Un Reporte de Nómina x Departamento    
      
-
 ## Tecnologias
 	C#
 	ASP.NET Web App MVC5 (Entity Framenwork 4.7)
